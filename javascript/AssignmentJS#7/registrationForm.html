@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="registrationForm.css">
+    </head>
+    <body>
+        <header>
+            <h1>Registration Form</h1>
+            <p id="browserAndTimer"></p>
+            <h3><b>Happy Coding</b></h3>
+        </header>
+        <form name="registrationForm" onsubmit="return validateForm()" action="successPage.html">
+            <div class="row">
+                <label>First Name<i>*</i></label>
+                <input type="text" id="firstName" name="firstName">
+                <div class="error" id="firstNameErr"></div>
+            </div>
+            <div class="row">
+                <label>Last Name<i>*</i></label>
+                <input type="text" id="lastName" name="lastName">
+                <div class="error" id="lastNameErr"></div>
+            </div>
+            <div class="row">
+                <label>Email Address<i>*</i></label>
+                <input type="text" id="email" name="email">
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div class="row">
+                <label>Mobile Number<i>*</i></label>
+                <input type="text" id="mobile" name="mobile" maxlength="10">
+                <div class="error" id="mobileErr"></div>
+            </div>
+            <div class="row">
+                <label>Date Of Birth<i>*</i></label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" placeholder="dd-mm-yyyy">
+                <div class="error" id="dateOfBirthErr"></div>
+            </div>
+            <div class="row">
+                <label>Hobbies<i>*</i></label>
+                <div class="form-inline">
+                    <label><input type="checkbox" name="hobbies[]" value="reading"> Reading</label>
+                    <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+                    <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>  
+                </div>
+            </div>        
+            <div class="row">
+                <input type="submit" value="Submit"><br>
+                <input type="reset" value="Reset">
+            </div>
+        </form>    
+        <script src="registrationForm.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+/* For background Image*/
+
+html{
+    background-image: url("cssImages/bgimage.jpg") ;
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin:5px;
+    padding: 5px;
+}
+
+/* CSS for horizontal navigation bar*/
+
+div.container {
+    display:inline-block;
+} 
+ul {
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: wheat;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color:rebeccapurple;
+}
+
+/*For image and video*/
+
+* {
+    box-sizing: border-box;
+}
+div.leftImage,div.rightImage,div.videoContainer {
+    
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+}
+div.leftImage{
+    border-radius: 10px;
+    margin-top: 5px;
+    background-image: url("cssImages/column1image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.rightImage{
+    border-radius: 10px;
+    margin-top: 5px;
+    background-image: url("cssImages/column3image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+video{
+    margin-top: 0px;
+    position: absolute;
+    width: 31.5%;
+    height: 280px; 
+}  
+
+/*For multiple cars block and list of cars*/
+
+div.multipleCars{
+    background-image: url("cssImages/hyundaiCars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 500px;
+    width: 1100px;
+}
+div.verticalList{
+    background-color: red;
+    float: left;
+    height: 420px;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.verticalList {
+    width: 200px;
+  }
+  
+  .verticalList a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .verticalList a:hover {
+    background-color: #ccc;
+  }
+  
+  .verticalList a.active {
+    background-color: #4CAF50;
+    color: white;
+  }

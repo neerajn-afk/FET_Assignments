@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 5.3 DOM
+        </title>
+    </head>
+    <body>
+        <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+        </div>
+        <script>
+            var newPara = document.createElement("p");
+            var paraNode = document.createTextNode("This is new.");
+            newPara.appendChild(paraNode);
+            var element = document.getElementById("div1");
+            element.appendChild(newPara);
+        </script>
+    </body>
+</html>

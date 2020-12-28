@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Use of location object in javascript
+        </title>
+    </head>
+    <body onload="showValues()">
+        <table border="1" id="myTable" >
+            <tr>
+                <th><b>Location</b></th>
+                <th id="locationValue"></th>
+                </tr>
+            <tr>
+                <th><b>Path Name</b></th>
+                <th id="pathName"></th>
+            </tr>
+            <tr>
+                <th><b>Protocol</b></th>
+                <th id="protocolValue"></th>
+            </tr>
+        </table>
+        <p>Click <a href="registration.html">here</a> to Register.</a></p>
+        <script>
+            function showValues(){
+                document.getElementById('locationValue').innerHTML = location.href;
+                document.getElementById('pathName').innerHTML = location.pathname;
+                document.getElementById('protocolValue').innerHTML = location.protocol;
+            }
+        </script>
+    </body>
+</html>

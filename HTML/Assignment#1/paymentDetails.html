@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            payment details
+        </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Payment Details</legend>            
+                <label>Name on card: <input type="text" name="Username"></label>            
+                <label>Card Number: <input type="tel" pattern="[0-9\s]{13,19}" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx"></label>
+                <label>Expiry date: <input type="date" max="16" name="Expiry"></label>
+                <label>CVV: <input type="tel" pattern="^[0-9]{3,4}$" name="CVV" placeholder="xxx"></label></br>
+                <fieldset>
+                    <input type="submit" value="Pay">
+                    <input type="reset" value="Clear">
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>

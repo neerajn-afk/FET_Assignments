@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <header style="text-align: center;font-size: 80px;"><u><b>Optimus Prime</b></u></header>
+        <div class="cal">
+            <div class="display"><input type="text" readonly size="18" id="dis"></div>
+            <div class="calButtons">
+                <p>
+                    <input type="button" class="scientificCal" value="Transform" onclick="window.location.href='scientificCalculator.html'">
+                    <input type="button" class="keys" value="BS" onclick='back()'>
+                    <input type="button" class="keys" value="C" onclick='c("")'>
+                </p>
+                <p>
+                    <input type="button" class="keys" value="7" onclick='v("7")'>
+                    <input type="button" class="keys" value="8" onclick='v("8")'>
+                    <input type="button" class="keys" value="9" onclick='v("9")'>
+                    <input type="button" class="operations" value="*" onclick='v("*")'>
+                </p>
+                <p>
+                    <input type="button" class="keys" value="4" onclick='v("4")'>
+                    <input type="button" class="keys" value="5" onclick='v("5")'>
+                    <input type="button" class="keys" value="6" onclick='v("6")'>
+                    <input type="button" class="operations" value="-" onclick='v("-")'>
+                </p>
+                <p>
+                    <input type="button" class="keys" value="1" onclick='v("1")'>
+                    <input type="button" class="keys" value="2" onclick='v("2")'>
+                    <input type="button" class="keys" value="3" onclick='v("3")'>
+                    <input type="button" class="operations" value="+" onclick='v("+")'>
+                </p>
+                <p>
+                    <input type="button" class="keys" value="0" onclick='v("0")'>
+                    <input type="button" class="keys" value="." onclick='v(".")'>
+                    <input type="button" class="operations" value="/" onclick='v("/")'>
+                    <input type="button" class="equal" value="=" onclick='evaluateExpression()'>
+                </p>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

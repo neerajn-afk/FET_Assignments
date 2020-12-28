@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Details</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Name</legend>            
+            <label>Firstname: <input type="text" name="firstname"></label>            
+            <label>Lastname: <input type="text" name="lastname"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>            
+            <label><input type="radio" name="gender" value="male"> Male</label>            
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </fieldset>
+        <fieldset>
+        	<legend>Hobbies</legend>            
+            <label><input type="checkbox" name="hobbies" value="soccer"> Soccer</label>
+            <label><input type="checkbox" name="hobbies" value="cricket"> Cricket</label>
+            <label><input type="checkbox" name="hobbies" value="baseball"> Baseball</label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email Address: <input type="email" name="email" required></label>
+            <label>Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required></label>
+            <label for="address">Address:</label>
+                <textarea rows="3" cols="30" name="address" id="address"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

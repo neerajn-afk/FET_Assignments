@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="changeText">
+            <label for="enterChar">Enter a Character: </label>
+            <input type="text" name="enterChar" id="enterChar" >
+            <input type="button" value="Search" onclick="checkChar()"><br>
+        </div>
+    <script>
+        var companyName = "Cybage Software Pvt Ltd";
+        function checkChar(){
+            if(companyName.indexOf(document.getElementById('enterChar').value)==-1)
+                document.getElementById('changeText').innerHTML = ("Character "+document.getElementById('enterChar').value+" not found."+"</br>");
+            else
+            document.getElementById('changeText').innerHTML = ("Character "+document.getElementById('enterChar').value+" is found at position "+companyName.indexOf(document.getElementById('enterChar').value)+".</br>");
+        }
+        document.write(companyName+" is also known as "+companyName.substring(0,15)+"</br>");
+        document.write(companyName.toLowerCase()+"</br>");
+        document.write(companyName.toUpperCase()+"</br>");
+    </script>
+    </body>
+</html>

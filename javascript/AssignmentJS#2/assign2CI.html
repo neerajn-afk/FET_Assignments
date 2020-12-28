@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Compound Interest Calculation using jQuery</title>
+    </head>
+    <body>
+        <script>
+            function calculate() {
+                p = document.getElementById("p").value;
+                n = document.getElementById("n").value; // no. of compoundings per year
+                r = document.getElementById("r").value;
+                result = document.getElementById("result");
+
+                // The equation is A = p * [[1 + (r/100)] ^ n]
+                A = (p * Math.pow((1 + (r / 100)), n));
+
+                // toFixed is used for rounding the amount with two decimal places.
+                result.innerHTML += "<br> Total interest payable is " + (A.toFixed(2) - p).toFixed(2);
+            }
+        </script>
+        <h1>Compound Interest Calculation Using jQuery</h1>
+        <div> <label>Enter Amount: </label> <input id="p"> </div>
+        <div> <label>Rate Of Interest (%): </label> <input id="r"> </div>
+        <div> <label>Compunding Times Per Year: </label> <input id="n"> </div>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Array assignment in JS
+        </title>
+    </head>
+    <body>
+        <div id="addStudent">
+            <label for="add">Enter name: </label>
+            <input type="text" name="add" id="add" >
+            <input type="button" value="Add" onclick="addNewStudent()">
+        </div>
+        <div id="displayStudent">
+            <input type="button" value="Display" onclick="displayStudent()"><br>
+        </div>
+        <script>
+            var students = [];
+            function addNewStudent(){
+                students.push(document.getElementById('add').value);
+                document.getElementById('add').value = " ";
+            }
+            function displayStudent(){
+                document.write("<b>List of Students</b></br><hr>");
+                var iterator = students.values();
+                for (let student of iterator) 
+                    document.write(student+"</br>");
+            }
+        </script>
+    </body>
+</html>
